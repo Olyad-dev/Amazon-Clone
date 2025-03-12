@@ -1,0 +1,42 @@
+.container{
+    background-color: #EAEDED;
+    padding: 30px;
+}
+
+.orders_container{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.orders_container h2{
+    border-radius: 2px solid #FFD814;
+    padding: 20px;
+}
+
+
+.empty_order {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.empty_order p {
+  font-size: 27px;
+  color: #555;
+}
+
+.orderId{
+   padding: 12px;
+}
+
+.orders_container img{
+    width: 100px !important;
+}
+
+.empty_order img {
+  width: 400px !important;
+  margin-bottom: 20px;
+}
+
+.product_div{
+    height: auto !important;
+}
