@@ -8,21 +8,30 @@ import logo from "../../assets/img/logo.png";
 const Footer = () => {
   const year = new Date().getFullYear();
 
+  const scrollToTopAndNavigate = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer>
       <div className="backTo">
-        <Link to="/">Back to top</Link>
+        <p style={{ color: "white" }} onClick={scrollToTopAndNavigate}>
+          Back to top
+        </p>
       </div>
       <div className="footer_container">
         <div className="footr_details_one">
-          <h3>Get to Know US</h3>
+          <h3>Get to Know Us</h3>
           <Link to="">Careers</Link>
           <br />
           <Link to="">Blog</Link>
           <br />
           <Link to="">About Amazon</Link>
           <br />
-          <Link to=""> Investor Relations</Link>
+          <Link to="">Investor Relations</Link>
           <br />
           <Link to="">Amazon Devices</Link>
           <br />
@@ -30,8 +39,8 @@ const Footer = () => {
           <br />
         </div>
         <div className="footr_details_one">
-          <h3>Make money with Us</h3>
-          <Link to=""> Sell Products on Amazon</Link>
+          <h3>Make Money with Us</h3>
+          <Link to="">Sell Products on Amazon</Link>
           <br />
           <Link to="">Sell on Amazon Business</Link>
           <br />
@@ -87,7 +96,6 @@ const Footer = () => {
       <Divider
         style={{
           width: "100%",
-
           marginTop: 50,
           borderColor: "#dddddd",
         }}
@@ -97,219 +105,96 @@ const Footer = () => {
           <img src={logo} alt="logo" />
         </div>
         <div className="footer_div">English</div>
-        <div className="footer_div">$USD -U.S. Dollar</div>
+        <div className="footer_div">$USD - U.S. Dollar</div>
         <div className="footer_div">United States</div>
       </div>
       <div className="lastdetails">
         <table>
-          <th>Amazon Music </th>
-          <th>Amazon</th>
-          <th> Amazon Drive</th>
-          <th>6pm</th>
-          <th>OliBooks</th>
-          <th>ACX</th>
-          <th>Alexa</th>
-          <tr>
-            <td>
-              Stream millions <br />
-              of songs
-            </td>
+          <thead>
+            <tr>
+              <th>Sell on Amazon</th>
+              <th>Amazon Business</th>
+              <th>AmazonGlobal</th>
+              <th>Home Services</th>
+              <th>Amazon Ignite</th>
+              <th>Amazon Web Services</th>
+              <th>Audible</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sell on Amazon</td>
+              <td>Everything For Your Business</td>
+              <td>Ship Orders Internationally</td>
+              <td>Home Services Experienced Pros</td>
+              <td>Sell your original Digital Educational Resources</td>
+              <td>Scalable Cloud Computing Services</td>
+              <td>Listen to Books & Original Audio Performances</td>
+            </tr>
 
-            <td>
-              Find, attract, and
-              <br />
-              engage customers
-            </td>
-
-            <td>
-              Cloud storage <br />
-              from Amazon
-            </td>
-
-            <td>
-              Score deals <br /> on fashion <br />
-              brands
-            </td>
-
-            <td>
-              Books, art & <br /> collectibles
-            </td>
-            <td>
-              Audiobook Publishing <br />
-              Made Easy
-            </td>
-            <td>
-              Actionable <br /> Analytics <br />
-              for the Web
-            </td>
-          </tr>
-          <th>Sell on Amazon</th>
-          <th>Amazon Business</th>
-          <th> AmazonGlobal</th>
-          <th>Home Services</th>
-          <th>Amazon Ignite</th>
-          <th> Amazon Web</th>
-          <th>Audible</th>
-          <tr>
-            <td>
-              Everything For
-              <br /> Your Business
-            </td>
-
-            <td>
-              Ship Orders
-              <br /> Internationally
-            </td>
-
-            <td>
-              Experienced Pros <br /> Happiness <br />
-              Guarantee
-            </td>
-
-            <td>
-              Sell your original <br /> Digital Educational Resources
-            </td>
-
-            <td>
-              Scalable Cloud <br />
-              Computing Services
-            </td>
-            <td>
-              Audiobook Publishing <br />
-              Made Easy
-            </td>
-            <td>
-              Listen to Books & <br />
-              Original Audio Performances
-            </td>
-          </tr>
-          <th>Amazon Music </th>
-          <th>Amazon</th>
-          <th> Amazon Drive</th>
-          <th>6pm</th>
-          <th>AbeBooks</th>
-          <th>ACX</th>
-          <th>Alexa</th>
-          <tr>
-            <td>
-              Stream millions <br />
-              of songs
-            </td>
-
-            <td>
-              Find, attract, and
-              <br />
-              engage customers
-            </td>
-
-            <td>
-              Cloud storage <br />
-              from Amazon
-            </td>
-
-            <td>
-              Score deals <br /> on fashion <br />
-              brands
-            </td>
-
-            <td>
-              Books, art & <br /> collectibles
-            </td>
-            <td>
-              Audiobook Publishing <br />
-              Made Easy
-            </td>
-            <td>
-              Actionable <br /> Analytics <br />
-              for the Web
-            </td>
-          </tr>
-          <th>Amazon Music </th>
-          <th>Amazon</th>
-          <th> Amazon Drive</th>
-          <th>6pm</th>
-          <th>AbeBooks</th>
-          <th>ACX</th>
-          <th>Alexa</th>
-          <tr>
-            <td>
-              Stream millions <br />
-              of songs
-            </td>
-
-            <td>
-              Find, attract, and
-              <br />
-              engage customers
-            </td>
-
-            <td>
-              Cloud storage <br />
-              from Amazon
-            </td>
-
-            <td>
-              Score deals <br /> on fashion <br />
-              brands
-            </td>
-
-            <td>
-              Books, art & <br /> collectibles
-            </td>
-            <td>
-              Audiobook Publishing <br />
-              Made Easy
-            </td>
-            <td>
-              Actionable <br /> Analytics <br />
-              for the Web
-            </td>
-          </tr>
-          <th></th>
-          <th>Amazon</th>
-          <th> Amazon Drive</th>
-          <th>6pm</th>
-          <th>AbeBooks</th>
-          <th>ACX</th>
-          <th>Alexa</th>
-          <tr>
-            <td></td>
-
-            <td>
-              Find, attract, and
-              <br />
-              engage customers
-            </td>
-
-            <td>
-              Cloud storage <br />
-              from Amazon
-            </td>
-
-            <td>
-              Score deals <br /> on fashion <br />
-              brands
-            </td>
-
-            <td>
-              Books, art & <br /> collectibles
-            </td>
-            <td>
-              Audiobook Publishing <br />
-              Made Easy
-            </td>
-            <td>
-              Actionable <br /> Analytics <br />
-              for the Web
-            </td>
-          </tr>
+            <tr>
+              <th>Book Depository</th>
+              <th>Box Office Mojo</th>
+              <th>ComiXology</th>
+              <th>DPReview</th>
+              <th>Fabric</th>
+              <th>Goodreads</th>
+              <th>IMDb</th>
+            </tr>
+            <tr>
+              <td>Books With Free Delivery Worldwide</td>
+              <td>Find Movie Box Office Data</td>
+              <td>Thousands of Digital Comics</td>
+              <td>Digital Photography</td>
+              <td>Sewing, Quilting & Knitting</td>
+              <td>Book reviews & recommendations</td>
+              <td>Movies, TV & Celebrities</td>
+            </tr>
+            <tr>
+              <th>IMDbPro</th>
+              <th>Kindle Direct Publishing</th>
+              <th>Prime Video Direct</th>
+              <th>Shopbop</th>
+              <th>Woot!</th>
+              <th>Zappos</th>
+              <th>Ring</th>
+            </tr>
+            <tr>
+              <td>Get Info Entertainment Professionals Need</td>
+              <td>Indie Digital & Print Publishing Made Easy</td>
+              <td>Video Distribution Made Easy</td>
+              <td>Designer Fashion Brands</td>
+              <td>Deals and Shenanigans</td>
+              <td>Shoes & Clothing</td>
+              <td>Smart Home Security Systems</td>
+            </tr>
+            <tr>
+              <th>Eero WiFi</th>
+              <th>Blink</th>
+              <th>Neighbors App</th>
+              <th>Amazon Subscription Boxes</th>
+              <th>PillPack</th>
+              <th>Amazon Renewed</th>
+              <th>Amazon Second Chance</th>
+            </tr>
+            <tr>
+              <td>Stream 4K Video in Every Room</td>
+              <td>Smart Security for Every Home</td>
+              <td>Real-Time Crime & Safety Alerts</td>
+              <td>Top subscription boxes – right to your door</td>
+              <td>Pharmacy Simplified</td>
+              <td>Like-new products you can trust</td>
+              <td>Pass it on, trade it in, give it a second life</td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <p className="footer__last">
         Conditions of Use & Sale &nbsp; &nbsp;&nbsp; Privacy Notice &nbsp;
-        &nbsp;&nbsp; Consumer Health Data Privacy Disclosure &nbsp; &nbsp;&nbsp; © 1996-{year},
-         Amazon.com, Inc. or its affiliates
+        &nbsp;&nbsp; Consumer Health Data Privacy Disclosure &nbsp; &nbsp;&nbsp;
+        © 1996-{year}, Amazon.com, Inc. or its affiliates
       </p>
+      <p className="built">Cloned by Olyad.G</p>
     </footer>
   );
 };

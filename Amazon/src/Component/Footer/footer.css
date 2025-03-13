@@ -5,10 +5,13 @@ footer {
 }
 
 .backTo {
+    cursor: pointer;
     height: 50px;
     text-align: center;
     background-color: #233448;
-    padding-top: 10px;
+    padding: 15px 0;
+    line-height: 19px;
+    font-size: 13px;
 }
 
 footer .footer_container {
@@ -139,6 +142,13 @@ td:hover{
     text-align: center;
     background-color: #131a22;
     font-size: small;
+}
+
+.built {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  padding: 5px 0;
 }
 
 @media (max-width: 700px) {

@@ -37,3 +37,15 @@
     gap: 20px;
     place-items: center;
 }
+
+
+@media screen and (max-width: 576px){
+   .category_container{
+    position: relative;
+    margin-top: -75px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: center;
+   }
+}
