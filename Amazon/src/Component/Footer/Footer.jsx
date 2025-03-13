@@ -38,6 +38,7 @@ const Footer = () => {
           <Link to="">Amazon Science</Link>
           <br />
         </div>
+        <br />
         <div className="footr_details_one">
           <h3>Make Money with Us</h3>
           <Link to="">Sell Products on Amazon</Link>

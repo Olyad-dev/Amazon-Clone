@@ -42,10 +42,14 @@
 @media screen and (max-width: 576px){
    .category_container{
     position: relative;
-    margin-top: -75px;
+    margin-top: 0px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     place-items: center;
+   }
+
+   .categoryCard img{
+      /* max-width: 150px; */
    }
 }

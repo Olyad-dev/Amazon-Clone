@@ -42,6 +42,10 @@
     background-color:#E88C12;
 }
 
+.desc{
+    width: 400px;
+}
+
 .rating{
     display: flex;
     align-items: center;
@@ -75,7 +79,6 @@
     margin-right: 40px;
 }
 
-
 .product__flexed img{
     width: 300px !important;
     height: auto;
@@ -89,6 +92,18 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     place-items: center;
+    }
+    .card_container{
+        width: 170px;
+        margin: 0 auto;
+    }
+    .product__flexed img{
+        width: 190px !important;
+        height: auto;
+    }
+    .desc{
+        width: 183px;
+        font-size: small;
     }
 }
 

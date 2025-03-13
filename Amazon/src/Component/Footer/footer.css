@@ -157,8 +157,21 @@ td:hover{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
     .footer_container .forres {
+        display: none;
+    }
+
+    footer .footer_container {
+    color: #dddddd;
+    display: block;
+    top: 30px;
+   }
+
+   .footer_div{
+    padding-top: 2px;
+   }
+    .lastdetails{
         display: none;
     }
 }
