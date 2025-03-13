@@ -30,7 +30,7 @@ function Auth() {
       user: userinfo.user
     })
     setLoading({ ...loading, signin: false });
-    navigate(navStateData.state.redirect || '/');
+    navigate(navStateData.state?.redirect || '/');
   }).catch((err)=>{
     setError(err.message);
     setLoading({ ...loading, signin: false });
@@ -44,7 +44,7 @@ createUserWithEmailAndPassword(auth, email, password)
       user: userinfo.user,
     });
      setLoading({ ...loading, signup: false });
-     navigate(navStateData.state.redirect || "/");
+     navigate(navStateData.state?.redirect || "/");
   }).catch((err) => {
     setError(err.message);
      setLoading({ ...loading, signup: false });
